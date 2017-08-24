@@ -1,0 +1,34 @@
+
+
+<div class="component-tao-product" *ngIf='Product'>
+
+  <div class="thumb-img-view">
+    <img src="{{Product.imgUrl}}">
+  </div>
+
+  <div class='attach-view'>
+    <div class="title">
+      <label>
+        <img src="{{Product.country}}" style="width:20px;">
+        {{Product.title}}
+      </label>  
+    </div>
+
+    <div class="members">
+      <div *ngFor='let attach of Product.attachs'>
+        <img src="{{attach}}">
+      </div>
+      <span *ngIf='Product.attachs.length>0' class="tip">召唤拼团</span>
+    </div>
+
+    <div class="info">
+      <div class="count">
+        <p>已拼{{Product.count}}件</p>
+        <p class="price">{{Product.price}}</p>
+      </div>
+      <div class="go-btn">
+        <button type="button">去拼单></button>
+      </div>
+    </div>
+  </div>
+</div>

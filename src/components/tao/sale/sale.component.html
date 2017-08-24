@@ -1,0 +1,22 @@
+
+
+<div class='component-tao-sale' *ngIf='sale'>
+  
+  <div class="title">
+    <label class="title-text">
+      <ion-icon name='{{sale.icon}}'></ion-icon>
+      {{sale.title}}
+    </label>
+  </div>
+
+  <div class="desc-text">
+    <label>
+        {{sale.decr}}
+    </label>
+  </div>
+
+  <div class="thumb-img">
+    <img src="{{sale.imgUrl}}">  
+  </div>
+
+</div>

@@ -1,0 +1,675 @@
+
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchQuery" [showCancelButton]="true" [placeholder]="'输入商品名称'" [cancelButtonText]="'取消'" (ionInput)="getItems($event)" (click)="showSearchPage=true" (ionCancel)="showSearchPage=false;">></ion-searchbar>
+  <div *ngIf="showSearchPage">
+    <div class="search-main-view">
+      <div class="search-recent-title-view">热门搜索</div>
+      <div class="search-recent-list-view search-hotquery-list-view">
+        <span class="search-content-item" *ngFor="let item of ['妈妈鞋', '眉笔防水', '针织衫', '耳环', '毛呢外套', '牙膏', '电子秤体重秤', '乐视2手机壳']">
+          {{item}}
+        </span>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!showSearchPage" id="classification-container" class="container" avalonctrl="classification">
+      <div id="root-list" style="height: 573px; touch-action: none;" class="turn-background-grey">
+        <ul style="height: 689px; transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+          <!--repeat205367747809-->
+        <li class="root-list-item root-active">
+          <div class="root-box">
+            <span>服饰</span>
+            <i class="icon icon-category-bag url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/834a8cc3c7ae5f87aa4f23c310352412.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/da66477f08f39bbb5ae6d245176e3799.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>男装</span>
+            <i class="icon icon-category-man url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/a975c53843d560e46005a64e789d7e58.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/308600186f2b4db25f37c5ba1309ad84.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>母婴</span>
+            <i class="icon icon-category-baby url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/7167ada9cec61529790b3594c78eed38.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/e3c10e700dedf8da22211fcb95804fda.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>美食</span>
+            <i class="icon icon-category-food url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/be7e3fc53b62df9501717ef6ae3a1db9.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/5d85ab1240b5d57c98afbfb947d7bcad.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>家居</span>
+            <i class="icon icon-category-furniture url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/be1c90ebdf42271e660d9c1c637b2ccc.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/c452e3805adbe0e7968d7db4aa9acd29.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>美妆</span>
+            <i class="icon icon-category-cosmetics url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/ad8ab71f3560093605207c5381d83f1f.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/443fb54685fb57a5c3bc077cc343c607.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>家纺</span>
+            <i class="icon icon-category-home url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/c7ea1c083022fe9190358564d4eabbb3.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/f0b72213dcdb831ab0d727ea20654b44.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>手机</span>
+            <i class="icon icon-me-heart url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/04df445f84a77264abcd96a39017a137.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/58df7d35ad6ad84e73f47bc53adc271f.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>电器</span>
+            <i class="icon icon-category-appliances url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/90fdcde18b3ab60bfd055ed8db24bf27.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/43d3853283a4f19fcc3e5f49fdb0d705.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>水果</span>
+            <i class="icon icon-category-fruit url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/b257495b32de09bc73270e56bc9d7fd1.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/f6f8ae92010594653b4794de91abd551.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>运动</span>
+            <i class="icon icon-me-heart url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-07-10/d1fede3a33749f7502529c90c968fcc6.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-07-10/9ac3dc6edb87f9eaabdfd5897aae2e92.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>海淘</span>
+            <i class="icon icon-category-overseas url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/a7162b80203fbea8b0618b29fef0ebf3.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/a6df9900ccf661206a62ee7c06f84390.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><li class="root-list-item">
+          <div class="root-box">
+            <span>热门</span>
+            <i class="icon icon-category-hot url-icon">
+              <img class="selected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-01/a6a7f639b342f043af8b4f7ae212ee5a.png">
+              <img class="unselected-icon" src="http://omsproductionimg.yangkeduo.com/images/2017-06-04/d770c5d3144e9db47bbeeccd12067f8e.png">
+            </i>
+          </div>
+          <!-- <div class="stick"></div> -->
+        </li><!--repeat205367747809--><!--repeat205367747809:end-->
+        </ul>
+      </div>
+      <div id="detail-list" style="height: 573px; touch-action: none;">
+        <ul style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+          <!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>服饰</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/002216dbb20fb111c63c7b7d4af5319f.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/002216dbb20fb111c63c7b7d4af5319f.png@50Q.webp">
+            <p>女装</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/d8556263f2101d5425372d40cd0c71d9.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/d8556263f2101d5425372d40cd0c71d9.jpeg@50Q.webp">
+            <p>秋装</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/591ab35340da5e6b75916bb770851480.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/591ab35340da5e6b75916bb770851480.jpeg@50Q.webp">
+            <p>女鞋</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/3cd8e1e7ecedeb9c733307522a472c95.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/3cd8e1e7ecedeb9c733307522a472c95.png@50Q.webp">
+            <p>连衣裙</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/b282023a0e1cf238b141c49f2a50efb4.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/b282023a0e1cf238b141c49f2a50efb4.png@50Q.webp">
+            <p>女裤</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/b58105fbd47c03bb68685731998d30e7.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/b58105fbd47c03bb68685731998d30e7.png@50Q.webp">
+            <p>裙子</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/1cea2f6b39d0b4bbd7b152c8a962ec4f.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/1cea2f6b39d0b4bbd7b152c8a962ec4f.jpeg@50Q.webp">
+            <p>单鞋</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/bbfde061220302958338e421603dc34f.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/bbfde061220302958338e421603dc34f.png@50Q.webp">
+            <p>套装</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/d603b9dc30317bc37fb562f6deeacf2c.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/d603b9dc30317bc37fb562f6deeacf2c.png@50Q.webp">
+            <p>T恤</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/7c25deaf9dc6722d1dd3e7d7e78d19d5.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/7c25deaf9dc6722d1dd3e7d7e78d19d5.png@50Q.webp">
+            <p>大码女装</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/ece4f63c500b3ae48958d787ecbf7b68.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/ece4f63c500b3ae48958d787ecbf7b68.png@50Q.webp">
+            <p>箱包</p>
+          </li><!--repeat410863124497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/772ce30f0fc3d1994aa8c77f692f36ce.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/772ce30f0fc3d1994aa8c77f692f36ce.png@50Q.webp">
+            <p>内衣裤袜</p>
+          </li><!--repeat410863124497--><!--repeat410863124497:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>男装</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat617260281241--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/8359d04b12842eeb6722f897b1a22bcd.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/8359d04b12842eeb6722f897b1a22bcd.png@50Q.webp">
+            <p>男装</p>
+          </li><!--repeat617260281241--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/8a7ff140e9426a832962901c02d143c7.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/8a7ff140e9426a832962901c02d143c7.png@50Q.webp">
+            <p>T恤</p>
+          </li><!--repeat617260281241--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/5fb2a6336a2eaf3fb69e3fefd4fd7e01.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/5fb2a6336a2eaf3fb69e3fefd4fd7e01.png@50Q.webp">
+            <p>男裤</p>
+          </li><!--repeat617260281241--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/0c6d526194f21fc771fc2229b5b18538.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/0c6d526194f21fc771fc2229b5b18538.png@50Q.webp">
+            <p>休闲裤</p>
+          </li><!--repeat617260281241--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/2c16a8c79a01f8303bc909fc8d9d13cd.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/2c16a8c79a01f8303bc909fc8d9d13cd.jpeg@50Q.webp">
+            <p>男鞋</p>
+          </li><!--repeat617260281241--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/0eb4ade21ed65f5c5dda6faeb3b4b2b3.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/0eb4ade21ed65f5c5dda6faeb3b4b2b3.jpeg@50Q.webp">
+            <p>衬衫</p>
+          </li><!--repeat617260281241--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/8768b38f36c12a6e2f2a14e540280447.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/8768b38f36c12a6e2f2a14e540280447.png@50Q.webp">
+            <p>套装</p>
+          </li><!--repeat617260281241--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/c386dcf75822d743c89a5fe44b6b8537.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/c386dcf75822d743c89a5fe44b6b8537.png@50Q.webp">
+            <p>内衣裤袜</p>
+          </li><!--repeat617260281241--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-18/ecf847d9c1962298d4c15ce0e92236d8.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-18/ecf847d9c1962298d4c15ce0e92236d8.jpeg@50Q.webp">
+            <p>凉鞋凉拖</p>
+          </li><!--repeat617260281241--><!--repeat617260281241:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>母婴</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat91704095705--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-18/953e8f0455676c183f5d59fba37afe77.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-18/953e8f0455676c183f5d59fba37afe77.jpeg@50Q.webp">
+            <p>童装</p>
+          </li><!--repeat91704095705--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-18/476d7072505a937378f07f340f4e8023.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-18/476d7072505a937378f07f340f4e8023.jpeg@50Q.webp">
+            <p>童鞋</p>
+          </li><!--repeat91704095705--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-28/ef9c721bc50454bde0df73ac29fa92bf.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-28/ef9c721bc50454bde0df73ac29fa92bf.jpeg@50Q.webp">
+            <p>凉鞋凉拖</p>
+          </li><!--repeat91704095705--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-18/bb8ba93131c1bd0bc3845494dc414d6d.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-18/bb8ba93131c1bd0bc3845494dc414d6d.jpeg@50Q.webp">
+            <p>孕妈专区</p>
+          </li><!--repeat91704095705--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-28/550718910ccf935d8eee7121541b0d49.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-28/550718910ccf935d8eee7121541b0d49.jpeg@50Q.webp">
+            <p>用品湿巾</p>
+          </li><!--repeat91704095705--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/ce6f60fb2535172ebfdf2df93e0444b1.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/ce6f60fb2535172ebfdf2df93e0444b1.jpeg@50Q.webp">
+            <p>玩具乐器</p>
+          </li><!--repeat91704095705--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/82eec8f2f06987a32282184f4970ee31.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/82eec8f2f06987a32282184f4970ee31.jpeg@50Q.webp">
+            <p>儿童文具</p>
+          </li><!--repeat91704095705--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/label/20/raC8tstT9Mlr6Z9nJsvtP3g34rLpEZeL.jpg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/label/20/raC8tstT9Mlr6Z9nJsvtP3g34rLpEZeL.jpg@50Q.webp">
+            <p>童车童床</p>
+          </li><!--repeat91704095705--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/image/5/uPgGCwojMkj3GBOAVFtbMMLM4stj1WFF.jpg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/image/5/uPgGCwojMkj3GBOAVFtbMMLM4stj1WFF.jpg@50Q.webp">
+            <p>纸尿裤</p>
+          </li><!--repeat91704095705--><!--repeat91704095705:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>美食</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat574250305063--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/4e8b98dfd1b979371f938ef3f5f2ec4d.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/4e8b98dfd1b979371f938ef3f5f2ec4d.jpeg@50Q.webp">
+            <p>休闲零食</p>
+          </li><!--repeat574250305063--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/83403f889d34c59313194fe285e9a631.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/83403f889d34c59313194fe285e9a631.jpeg@50Q.webp">
+            <p>坚果蜜饯</p>
+          </li><!--repeat574250305063--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/217f21c688dd067f4538f8a0fed393a4.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/217f21c688dd067f4538f8a0fed393a4.jpeg@50Q.webp">
+            <p>瘦成闪电</p>
+          </li><!--repeat574250305063--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/159a0f98a828449155772c3e3163708b.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/159a0f98a828449155772c3e3163708b.jpeg@50Q.webp">
+            <p>乳制品</p>
+          </li><!--repeat574250305063--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/c1f133ca921d4581bde09262f5edf255.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/c1f133ca921d4581bde09262f5edf255.jpeg@50Q.webp">
+            <p>粮油速食</p>
+          </li><!--repeat574250305063--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/71547bce55b7050686355e7a2a78acf8.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/71547bce55b7050686355e7a2a78acf8.jpeg@50Q.webp">
+            <p>营养保健</p>
+          </li><!--repeat574250305063--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-06-18/0415135595385f7e60aa0554b129ece8.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-06-18/0415135595385f7e60aa0554b129ece8.jpeg@50Q.webp">
+            <p>糕点饼干</p>
+          </li><!--repeat574250305063--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/225ca41f4f593187eed5f08132bf9681.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/225ca41f4f593187eed5f08132bf9681.jpeg@50Q.webp">
+            <p>酒水饮料</p>
+          </li><!--repeat574250305063--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/83ce23800bc1360f5a4ad97a35bf1208.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/83ce23800bc1360f5a4ad97a35bf1208.jpeg@50Q.webp">
+            <p>茶叶冲饮</p>
+          </li><!--repeat574250305063--><!--repeat574250305063:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>家居</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat841272241878--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/2827cd643b80d6756317e9a7e1fcd932.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/2827cd643b80d6756317e9a7e1fcd932.jpeg@50Q.webp">
+            <p>纸品湿巾</p>
+          </li><!--repeat841272241878--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/f35a928bfb020581c2644c14d5a25527.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/f35a928bfb020581c2644c14d5a25527.jpeg@50Q.webp">
+            <p>饰品首饰</p>
+          </li><!--repeat841272241878--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/86af6c60523b53f60837c75d9f979866.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/86af6c60523b53f60837c75d9f979866.jpeg@50Q.webp">
+            <p>收纳整理</p>
+          </li><!--repeat841272241878--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/818338fc75ab4c9783321e1fb672ec36.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/818338fc75ab4c9783321e1fb672ec36.jpeg@50Q.webp">
+            <p>日用百货</p>
+          </li><!--repeat841272241878--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/f3d0020b93afa198540bb87f55a6f088.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/f3d0020b93afa198540bb87f55a6f088.jpeg@50Q.webp">
+            <p>厨房用品</p>
+          </li><!--repeat841272241878--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/333d07d1268c9c27994e28e49b5f6b31.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/333d07d1268c9c27994e28e49b5f6b31.jpeg@50Q.webp">
+            <p>清洁用具</p>
+          </li><!--repeat841272241878--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/c2d59c00d3bf7ebe2bd02d6dfd2678b2.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/c2d59c00d3bf7ebe2bd02d6dfd2678b2.jpeg@50Q.webp">
+            <p>洗护清洁</p>
+          </li><!--repeat841272241878--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/2a08ac72debe8d51f2617e14ff5e9a4a.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/2a08ac72debe8d51f2617e14ff5e9a4a.jpeg@50Q.webp">
+            <p>餐具水具</p>
+          </li><!--repeat841272241878--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-05/a05ed6fb4856e3f9a1a2acf1869143c2.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-05/a05ed6fb4856e3f9a1a2acf1869143c2.jpeg@50Q.webp">
+            <p>暑期书单</p>
+          </li><!--repeat841272241878--><!--repeat841272241878:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>美妆</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat53486865972--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-17/4edb439d19e08d9ab10d9b5b627ed5ac.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-17/4edb439d19e08d9ab10d9b5b627ed5ac.jpeg@50Q.webp">
+            <p>面部护理</p>
+          </li><!--repeat53486865972--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-18/a63a4e5e9337146270a95bd2405ea5f3.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-18/a63a4e5e9337146270a95bd2405ea5f3.jpeg@50Q.webp">
+            <p>面膜</p>
+          </li><!--repeat53486865972--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-19/73451ce352b801ea10fcbf36a7615a22.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-19/73451ce352b801ea10fcbf36a7615a22.jpeg@50Q.webp">
+            <p>彩妆香氛</p>
+          </li><!--repeat53486865972--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-19/4e5d31319cc3914300d0a86bacea7ec8.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-19/4e5d31319cc3914300d0a86bacea7ec8.jpeg@50Q.webp">
+            <p>美发护发</p>
+          </li><!--repeat53486865972--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-19/dadd26f2ec8938c6b08acb802251ad73.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-19/dadd26f2ec8938c6b08acb802251ad73.jpeg@50Q.webp">
+            <p>口红唇膏</p>
+          </li><!--repeat53486865972--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-19/2be3d6e0a0737d1c431c0db0def103c6.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-19/2be3d6e0a0737d1c431c0db0def103c6.jpeg@50Q.webp">
+            <p>爽肤水乳</p>
+          </li><!--repeat53486865972--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-19/9119f2cffcc03f07ab0ade62d19b36dd.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-19/9119f2cffcc03f07ab0ade62d19b36dd.jpeg@50Q.webp">
+            <p>防晒美白</p>
+          </li><!--repeat53486865972--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-19/f2f4cfd7c07140cfe0115236ce226727.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-19/f2f4cfd7c07140cfe0115236ce226727.jpeg@50Q.webp">
+            <p>身体护理</p>
+          </li><!--repeat53486865972--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-19/886e89a3a1b8d57ba592d45e74e36440.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-19/886e89a3a1b8d57ba592d45e74e36440.jpeg@50Q.webp">
+            <p>美妆工具</p>
+          </li><!--repeat53486865972--><!--repeat53486865972:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>家纺</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat734436348497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/08f1f39084c95b81c0a1a11af27667b3.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/08f1f39084c95b81c0a1a11af27667b3.jpeg@50Q.webp">
+            <p>床品套件</p>
+          </li><!--repeat734436348497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-31/8cd6029cbf0f43632c02b4d2c09cf7e9.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-31/8cd6029cbf0f43632c02b4d2c09cf7e9.jpeg@50Q.webp">
+            <p>布艺家饰</p>
+          </li><!--repeat734436348497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-31/6823a200589b8ea4a9b6d8afaad56e38.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-31/6823a200589b8ea4a9b6d8afaad56e38.jpeg@50Q.webp">
+            <p>住宅家具</p>
+          </li><!--repeat734436348497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-31/dcebfcb2fc7c8d4ddea0b367456e10f4.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-31/dcebfcb2fc7c8d4ddea0b367456e10f4.jpeg@50Q.webp">
+            <p>衣柜鞋柜</p>
+          </li><!--repeat734436348497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-31/d4d0b986c87413be1933eb37f5fd2a08.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-31/d4d0b986c87413be1933eb37f5fd2a08.jpeg@50Q.webp">
+            <p>被子毯子</p>
+          </li><!--repeat734436348497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-31/b02e08f7e0289a6413906cd47fe4a8e1.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-31/b02e08f7e0289a6413906cd47fe4a8e1.jpeg@50Q.webp">
+            <p>家装建材</p>
+          </li><!--repeat734436348497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-31/09ef4f6dccb0c7a9a8e80bc951ba8dd2.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-31/09ef4f6dccb0c7a9a8e80bc951ba8dd2.jpeg@50Q.webp">
+            <p>床单被套</p>
+          </li><!--repeat734436348497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-31/ea23d2ce8802faad34097f713313e46c.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-31/ea23d2ce8802faad34097f713313e46c.jpeg@50Q.webp">
+            <p>枕头床垫</p>
+          </li><!--repeat734436348497--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-31/fad55a26614fde34b7e0a601667b5c65.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-31/fad55a26614fde34b7e0a601667b5c65.jpeg@50Q.webp">
+            <p>凉席蚊帐</p>
+          </li><!--repeat734436348497--><!--repeat734436348497:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>手机</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat289641279185--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/d6cff2b25e83d4b9605cc7a60bb5d8e1.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/d6cff2b25e83d4b9605cc7a60bb5d8e1.jpeg@50Q.webp">
+            <p>智能机</p>
+          </li><!--repeat289641279185--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/7dc9e9a0fb673937ef39464a256b366e.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/7dc9e9a0fb673937ef39464a256b366e.jpeg@50Q.webp">
+            <p>老人机</p>
+          </li><!--repeat289641279185--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/cc635a636ffc01f67ca1dd06e73db6f7.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/cc635a636ffc01f67ca1dd06e73db6f7.jpeg@50Q.webp">
+            <p>数码配件</p>
+          </li><!--repeat289641279185--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/a1e1f886c887cae51f11d48e5d3c4e2d.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/a1e1f886c887cae51f11d48e5d3c4e2d.jpeg@50Q.webp">
+            <p>汽车内外饰</p>
+          </li><!--repeat289641279185--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/9cf15845a38f1d25d9d1615a325cb3a5.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/9cf15845a38f1d25d9d1615a325cb3a5.jpeg@50Q.webp">
+            <p>汽车保养</p>
+          </li><!--repeat289641279185--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/e89bd1f6eb37dbb77900939ba0425333.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/e89bd1f6eb37dbb77900939ba0425333.jpeg@50Q.webp">
+            <p>智能设备</p>
+          </li><!--repeat289641279185--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/e549806a00d4bb56ddff4806b53c2926.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/e549806a00d4bb56ddff4806b53c2926.jpeg@50Q.webp">
+            <p>影音影像</p>
+          </li><!--repeat289641279185--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/152099db34b172752081df5ac442dc81.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/152099db34b172752081df5ac442dc81.jpeg@50Q.webp">
+            <p>电脑网络</p>
+          </li><!--repeat289641279185--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/7bd0c18d8586b195cd372d4d0b3444ba.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/7bd0c18d8586b195cd372d4d0b3444ba.jpeg@50Q.webp">
+            <p>办公文具</p>
+          </li><!--repeat289641279185--><!--repeat289641279185:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>电器</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat236887857316--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-30/ff10bd1dd3d9dbc3b788b31293d16e05.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-30/ff10bd1dd3d9dbc3b788b31293d16e05.jpeg@50Q.webp">
+            <p>饭煲电磁炉</p>
+          </li><!--repeat236887857316--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-30/df4536ddcccd6e09b6f200e1ab4a4e47.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-30/df4536ddcccd6e09b6f200e1ab4a4e47.jpeg@50Q.webp">
+            <p>厨房电器</p>
+          </li><!--repeat236887857316--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/4c96c5d28d77233409063ead3e3ac7e4.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/4c96c5d28d77233409063ead3e3ac7e4.jpeg@50Q.webp">
+            <p>电风扇</p>
+          </li><!--repeat236887857316--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/71d2d1c08a82fe23913ba60a660efc03.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/71d2d1c08a82fe23913ba60a660efc03.jpeg@50Q.webp">
+            <p>生活电器</p>
+          </li><!--repeat236887857316--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-26/a9fd6d764429d64e291157527c740368.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-26/a9fd6d764429d64e291157527c740368.jpeg@50Q.webp">
+            <p>个人护理</p>
+          </li><!--repeat236887857316--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/e0b734414897012c702d9cba0892e4d3.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/e0b734414897012c702d9cba0892e4d3.jpeg@50Q.webp">
+            <p>医疗保健</p>
+          </li><!--repeat236887857316--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/eb4e88692df95bfe032749b072aa1b72.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/eb4e88692df95bfe032749b072aa1b72.jpeg@50Q.webp">
+            <p>冰箱空调</p>
+          </li><!--repeat236887857316--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/988de2f353c0f8ad77ea46146984fb0d.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/988de2f353c0f8ad77ea46146984fb0d.jpeg@50Q.webp">
+            <p>洗衣机</p>
+          </li><!--repeat236887857316--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-29/8bf366b1192cc5f4ac888cf86912988f.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-29/8bf366b1192cc5f4ac888cf86912988f.jpeg@50Q.webp">
+            <p>电视厨卫</p>
+          </li><!--repeat236887857316--><!--repeat236887857316:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>水果</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat561697128211--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/c65075683638f4fc92376c0c65d54740.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/c65075683638f4fc92376c0c65d54740.jpeg@50Q.webp">
+            <p>新鲜水果</p>
+          </li><!--repeat561697128211--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/d8df501bbfe24fd95567e2f8dac6cfc3.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/d8df501bbfe24fd95567e2f8dac6cfc3.jpeg@50Q.webp">
+            <p>芒果节</p>
+          </li><!--repeat561697128211--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-06-28/851406044a75b78a113305136b006149.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-06-28/851406044a75b78a113305136b006149.jpeg@50Q.webp">
+            <p>海鲜水产</p>
+          </li><!--repeat561697128211--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-06-28/7280e0f2c4bc6f4fb64881c16b35b8d5.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-06-28/7280e0f2c4bc6f4fb64881c16b35b8d5.jpeg@50Q.webp">
+            <p>蔬菜</p>
+          </li><!--repeat561697128211--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-06-28/98af3ce49ec4d7b6c1deeab0cafb418e.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-06-28/98af3ce49ec4d7b6c1deeab0cafb418e.jpeg@50Q.webp">
+            <p>消暑必备</p>
+          </li><!--repeat561697128211--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-06-28/2c7bb48efa657bd4de9bfcd65259ffe5.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-06-28/2c7bb48efa657bd4de9bfcd65259ffe5.jpeg@50Q.webp">
+            <p>热带水果</p>
+          </li><!--repeat561697128211--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-17/1d105b9bb6319de026ef9eb310aabbda.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-17/1d105b9bb6319de026ef9eb310aabbda.jpeg@50Q.webp">
+            <p>蛋/蛋制品</p>
+          </li><!--repeat561697128211--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-17/9b5082c6a515a6eb5579a58407bb4e6b.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-17/9b5082c6a515a6eb5579a58407bb4e6b.jpeg@50Q.webp">
+            <p>肉类熟食</p>
+          </li><!--repeat561697128211--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-06-19/5584586cefc196f067d3ed8ceb603766.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-06-19/5584586cefc196f067d3ed8ceb603766.jpeg@50Q.webp">
+            <p>进口优选</p>
+          </li><!--repeat561697128211--><!--repeat561697128211:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>运动</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat793055641817--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-10/b59f44de9f8b5ce4cd4b6ee7a616297b.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-10/b59f44de9f8b5ce4cd4b6ee7a616297b.jpeg@50Q.webp">
+            <p>运动鞋</p>
+          </li><!--repeat793055641817--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-10/c32996fafa01cc223eca6290cdeae83e.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-10/c32996fafa01cc223eca6290cdeae83e.jpeg@50Q.webp">
+            <p>运动服饰</p>
+          </li><!--repeat793055641817--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-19/cd4e9bb0e9b3232fe79f6b3dac416f55.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-19/cd4e9bb0e9b3232fe79f6b3dac416f55.jpeg@50Q.webp">
+            <p>沙滩鞋</p>
+          </li><!--repeat793055641817--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-10/7629912140477c25f13309805ae95e58.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-10/7629912140477c25f13309805ae95e58.jpeg@50Q.webp">
+            <p>健美瘦身</p>
+          </li><!--repeat793055641817--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-10/89f5010fa40114be6d9fa06d07d3b236.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-10/89f5010fa40114be6d9fa06d07d3b236.jpeg@50Q.webp">
+            <p>户外装备</p>
+          </li><!--repeat793055641817--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-10/02cde70c665ad984b459e4d7bce3b7b3.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-10/02cde70c665ad984b459e4d7bce3b7b3.png@50Q.webp">
+            <p>体育用品</p>
+          </li><!--repeat793055641817--><!--repeat793055641817:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>海淘</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat129166649004--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/label/220/bULQVnc1ymeNPcHBXTVYm840vegZkRbF.jpg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/label/220/bULQVnc1ymeNPcHBXTVYm840vegZkRbF.jpg@50Q.webp">
+            <p>进口母婴</p>
+          </li><!--repeat129166649004--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-04-25/f3da272703ea4fc4b1809b415b1ea128.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-04-25/f3da272703ea4fc4b1809b415b1ea128.jpeg@50Q.webp">
+            <p>进口男女鞋</p>
+          </li><!--repeat129166649004--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-04-25/d5e84135a48a4cb8739a81a43cc44b3d.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-04-25/d5e84135a48a4cb8739a81a43cc44b3d.jpeg@50Q.webp">
+            <p>进口服饰</p>
+          </li><!--repeat129166649004--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/label/224/GQAa43ghMfqHDiPB2Jy1lCqKDqfedv6X.jpg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/label/224/GQAa43ghMfqHDiPB2Jy1lCqKDqfedv6X.jpg@50Q.webp">
+            <p>进口美妆</p>
+          </li><!--repeat129166649004--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-03-15/bd4119bac188aee016c7743d18277ec8.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-03-15/bd4119bac188aee016c7743d18277ec8.jpeg@50Q.webp">
+            <p>进口食品</p>
+          </li><!--repeat129166649004--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-04-25/09a38ac8a475461d95b62e27bd83e32f.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-04-25/09a38ac8a475461d95b62e27bd83e32f.jpeg@50Q.webp">
+            <p>进口童装</p>
+          </li><!--repeat129166649004--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/label/299/eEOlvL77jMTuUS4EvZP3dahPPRbTMm8m.jpg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/label/299/eEOlvL77jMTuUS4EvZP3dahPPRbTMm8m.jpg@50Q.webp">
+            <p>进口个护</p>
+          </li><!--repeat129166649004--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/label/223/tkQwjF7Yq6wUFggJXGzRAJ9ApIJN1LVj.jpg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/label/223/tkQwjF7Yq6wUFggJXGzRAJ9ApIJN1LVj.jpg@50Q.webp">
+            <p>进口家居</p>
+          </li><!--repeat129166649004--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-04-25/5adb34d8faff7d1633eb74dbc1c0ca1f.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-04-25/5adb34d8faff7d1633eb74dbc1c0ca1f.jpeg@50Q.webp">
+            <p>轻奢箱包</p>
+          </li><!--repeat129166649004--><!--repeat129166649004:end-->
+          </ul>
+        </li><!--repeat705390334372--><li class="classification-detail-item">
+          <div class="head">
+            <div class="tab">
+              <span>热门</span>
+            </div>
+            <div class="show-all">
+              查看更多
+              <img class="detail-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAIVBMVEUAAACcnJycnJycnJycnJycnJycnJycnJycnJycnJycnJx3mU74AAAAC3RSTlMAfw5vJHdYSjUbQQwBkC0AAAAySURBVAjXY+AoYgCCicIKQFJV0AhIsgiCOY6onAQgySUYAGFDxMFqIEywXpg5IDNhAAB0CwdERcuYjQAAAABJRU5ErkJggg==">
+            </div>
+          </div>
+          <ul class="detail">
+            <!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-19/4bb0b1573dfb8dd1a4460511863a814a.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-19/4bb0b1573dfb8dd1a4460511863a814a.jpeg@50Q.webp">
+            <p>童装</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/fb284e433ddc1d1f81599a05418ee468.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/fb284e433ddc1d1f81599a05418ee468.png@50Q.webp">
+            <p>裙子</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-20/0bbfafaeadbea130bebccd5739a119d7.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-20/0bbfafaeadbea130bebccd5739a119d7.jpeg@50Q.webp">
+            <p>粮油速食</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/0d1d99dcbdde9f3c54073bccfad51a10.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/0d1d99dcbdde9f3c54073bccfad51a10.jpeg@50Q.webp">
+            <p>厨房用品</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/e082f78f4e163c6ddbff5cbb97ce0219.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/e082f78f4e163c6ddbff5cbb97ce0219.jpeg@50Q.webp">
+            <p>休闲零食</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/bdd0c2a4e1fbf4bfda70a26106ebd891.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/bdd0c2a4e1fbf4bfda70a26106ebd891.jpeg@50Q.webp">
+            <p>儿童文具</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-05-19/7c808e9740a9bb77f68ca9de8cfec4a2.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-05-19/7c808e9740a9bb77f68ca9de8cfec4a2.jpeg@50Q.webp">
+            <p>床品套件</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-08-11/b824ffdadf2c53c2a171a980af67aea3.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-08-11/b824ffdadf2c53c2a171a980af67aea3.jpeg@50Q.webp">
+            <p>面膜</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-06-18/e3ffb6c63981de21ede34f89ae87b1a1.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-06-18/e3ffb6c63981de21ede34f89ae87b1a1.jpeg@50Q.webp">
+            <p>糕点饼干</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-06/0a1291c1724af68f95384d2de8a88b18.png@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-06/0a1291c1724af68f95384d2de8a88b18.png@50Q.webp">
+            <p>女鞋</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-07-13/f924096ce3944e738e888674c10d08ac.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-07-13/f924096ce3944e738e888674c10d08ac.jpeg@50Q.webp">
+            <p>手机</p>
+          </li><!--repeat82297940495--><li class="detail-item">
+            <img data-url="http://omsproductionimg.yangkeduo.com/images/2017-04-10/c7c0364cb8a25372eea0de832bf84df9.jpeg@50Q.webp" src="http://omsproductionimg.yangkeduo.com/images/2017-04-10/c7c0364cb8a25372eea0de832bf84df9.jpeg@50Q.webp">
+            <p>乳制品</p>
+          </li><!--repeat82297940495--><!--repeat82297940495:end-->
+          </ul>
+        </li><!--repeat705390334372--><!--repeat705390334372:end-->
+          <li class="blank"></li>
+        </ul>
+      </div>
+  </div>
+</ion-content>

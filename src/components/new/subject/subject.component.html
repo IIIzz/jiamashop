@@ -1,0 +1,24 @@
+
+
+
+<div class="component-new-subject" *ngIf='subject'>
+        <div class="title">
+          <label class="title-text">
+            <ion-icon name='{{subject.icon}}' class="title-icon"></ion-icon>
+            <strong>{{subject.title}}</strong>
+          </label>
+        </div>
+        <div class="desc-text">
+          <label>{{subject.desc}}</label>
+        </div>
+        <div class="thumb-img">
+          <div>
+            <div *ngFor='let image of subject.images'>
+              <img src="{{image}}" [class.circle]='isCircle'>
+            </div>
+          </div>
+        </div>
+
+</div>
+
+

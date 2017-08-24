@@ -1,0 +1,22 @@
+<div class="component-new-product" *ngIf="product">
+  <div>
+    <img src="{{product.thumb}}">
+  </div>
+
+  <div class="product-middle">
+    <label class="title">
+      {{product.title}}
+    </label>
+  </div>
+
+  <div class="product-bottom">
+    <label class="price">
+      {{product.price}}
+    </label>
+    <div class="attachs">
+      <div *ngFor="let attach of product.attachs" >
+          <img src="{{attach}}">
+      </div>
+    </div>
+  </div>
+</div>

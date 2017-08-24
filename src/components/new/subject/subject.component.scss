@@ -1,0 +1,38 @@
+
+
+.component-new-subject {
+    padding: 15px 0;
+    .title {
+      .title-text {
+        display: inherit;
+        color:#666;
+        text-align: center;
+      } 
+    }
+    .desc-text {
+      color:#9c9c9c;
+      text-align: center;      
+    }
+    
+    .thumb-img {
+      text-align: center;
+      div {
+        display: inline-block;
+        margin: 0 auto;
+        align-items: center;
+        div {
+          display: inline-block;
+          padding: 5px 0;
+          img {
+            margin-right: -5px;
+            width : 24px;
+            height: 24px;
+            display: block;
+          }
+          .circle {
+            border-radius: 12px;
+          }
+        }
+      }
+    }
+}

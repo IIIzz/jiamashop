@@ -1,0 +1,68 @@
+.component-tao-product {
+  line-height: 1;
+  height: 140px;
+  .thumb-img-view {
+    width: 40%;
+    display: inline-block;
+    img {
+      width: 100%;
+    }
+  }
+  .attach-view {
+    width: 55%;
+    float: right;
+    .title {
+      height: 36px;
+      overflow:hidden;          
+      label {
+        font-size: 12px;
+        img {
+          width: 20px;
+        }
+      }
+    }
+    .members {
+      display: inline-block;
+      div {
+        display: inline-block;
+        img {
+          width: 20px;
+          margin-right: -3px;
+          border-radius: 10px;
+        }
+      }
+      .tip {
+        padding: 5px;
+        font-size: 8px;
+        border-width: 1px;
+        border-color: grey;
+      }
+    }
+    .info {
+      height: 40px;
+      margin-top: 40px;
+      .count {
+        display: inline-block;
+        p {
+          margin: 0;
+          color: #9c9c9c;
+        }
+        .price {
+          color: #e02e24;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+      .go-btn {
+        float: right;        
+        margin: 7px 3px;
+        button {
+          border-radius: 4px;
+          height: 25px;
+          background-color: #e02e24;
+          color: white;
+        }
+      }
+    }
+  }
+}

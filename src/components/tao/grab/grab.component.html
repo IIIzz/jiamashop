@@ -1,0 +1,26 @@
+
+
+<div class='component-tao-grab' *ngIf='grab'>
+  
+  <div class="title">
+    <label class="title-text">
+      <ion-icon name='{{grab.icon}}'></ion-icon>
+      {{grab.title}}
+    </label>
+  </div>
+
+  <div class="count-down">
+    <label>
+      <span class="number">23</span>
+      <span>:</span>
+      <span class="number">58</span>
+      <span>:</span>
+      <span class="number">48</span>
+    </label>
+  </div>
+
+  <div class="thumb-img">
+    <img src="{{grab.imgUrl}}">  
+  </div>
+
+</div>

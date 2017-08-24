@@ -1,0 +1,38 @@
+
+<ion-content class="page-new">
+
+  <div class="new-header">
+    <ion-grid>
+      <ion-row>
+          <ion-col>
+              <component-new-subject [subject]='Subject1' [isCircle]='true'></component-new-subject>
+          </ion-col>
+
+        <div class="header-line">
+        </div>
+          <ion-col>
+              <component-new-subject [subject]='Subject2'></component-new-subject>
+          </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+
+  </div>
+
+  <div class="separate"></div>
+
+  <div class="new-list-header">
+    <label>
+      <ion-icon name='heart'></ion-icon>
+      精选精品
+    </label>
+  </div>
+
+  <div class="new-list">
+    <div *ngFor="let product of Products" class="item">
+        <component-new-product [product]='product'></component-new-product>
+    </div>
+  </div>
+
+</ion-content>

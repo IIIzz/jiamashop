@@ -1,0 +1,33 @@
+
+
+.component-new-product {
+  
+  .product-middle {
+    .title{
+      margin: 5px;
+    }
+  }
+
+  .product-bottom {
+    margin: 5px;
+    .price {
+      color: red;
+    }
+
+    .attachs {
+      float: right;
+      display: block;
+      div {
+        display: inline-block;        
+        img {
+          padding: 3px;
+          width: 24px;
+          margin-right: -5px;
+          border-radius: 12px;
+          display: block;          
+        }
+      }
+    }
+  }
+
+}

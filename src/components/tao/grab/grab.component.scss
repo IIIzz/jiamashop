@@ -1,0 +1,39 @@
+
+.component-tao-grab {
+  padding: 15px;
+  .title {
+    .title-text {
+      display: inherit;
+      color:#ff70b0;
+      text-align: center;
+      font-weight: bold;
+    } 
+  }
+  .desc-text {
+    color:#9c9c9c;
+    text-align: center;      
+  }
+  .count-down {
+    text-align: center;
+    label {
+      margin: 0 auto;
+      .number{
+        width: 15px;
+        font: 8px;
+        background-color: #666;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+
+  .thumb-img {
+    img {
+      padding: 10px 20px;;
+    }
+  }
+  
+  
+
+
+}

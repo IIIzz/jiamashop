@@ -1,0 +1,53 @@
+<ion-content class="component-tao">
+
+  <ion-grid>
+    <ion-row>
+
+      <ion-col>
+        <div class="header-left">
+          <component-tao-grab [grab]='Grab'></component-tao-grab>
+        </div>
+      </ion-col>
+      <div class="header-line"></div>
+
+      <ion-col>
+        <div class="header-right">
+          <component-tao-sale [sale]='Sale'></component-tao-sale>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <!--<div class="tao-header">-->
+
+
+  <!--</div>-->
+
+  <!--<div class="separate"></div>-->
+
+  <div class="new-list-header">
+    <p class="main">
+      全球热门
+    </p>
+    <p class="sub">
+      <span>
+        <img src='../../assets/icon_zheng.png'>
+        正品保障&nbsp;
+      </span>
+      <span>
+        <img src="../../assets/icon_money.png">
+        包税包邮&nbsp;
+      </span>
+      <span>
+        <img src="../../assets/icon_lightning.png">
+        极速发货&nbsp;
+      </span>
+    </p>
+  </div>
+
+  <div *ngFor='let product of Products'>
+    <component-tao-product [Product]='product' *ngIf="product.type=='product'"></component-tao-product>
+    <component-tao-cross [cross]='product' *ngIf="product.type=='cross'"></component-tao-cross>
+  </div>
+
+</ion-content>

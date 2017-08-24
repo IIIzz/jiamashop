@@ -1,0 +1,52 @@
+
+page-tao {
+  
+  .tao-header {
+    .header-left {
+      height:98px;
+      width:49%;
+      display:inline-block;
+    }
+    .header-line {
+      width:1px;
+      height:60px;
+      margin: 50px 0;
+      background:#efefef;
+      display:inline-block;
+    }
+    .header-right {
+      height:98px;
+      width:49%;
+      display:inline-block;
+      float:right;
+    }
+  }
+
+  .new-list-header {
+    text-align: center;
+    padding: 10px;
+    p {
+      margin: 0;
+    }
+    .main{
+      color: #58595b;
+      text-align: center;
+      font-weight: bold;
+    }
+    .sub{
+      text-align: center; 
+      color: #9c9c9c;
+      font-size: 10px;
+      padding: 0 5px;
+      span {
+        img {
+          width: 10px;
+        }
+      }
+    }
+  }
+
+  
+
+
+}

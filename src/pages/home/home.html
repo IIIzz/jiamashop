@@ -1,0 +1,14 @@
+<ion-header>
+    <component-home-head></component-home-head>
+</ion-header>
+<ion-content style="background-color: #eee">
+  <div style="margin-top: 44px;">
+    <ion-slides #mySlide pager autoplay="2000" loop>
+      <ion-slide *ngFor="let slide of slidesObj" style="width: 100%">
+        <img width="100%" [src]="slide.image" (click)="goToSlide()" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <component-home-entity></component-home-entity>
+  <component-home-product *ngFor="let product of [1, 2, 3, 4, 5,6,7,8,9,10]"></component-home-product>
+</ion-content>

@@ -1,0 +1,21 @@
+<div class="component-tao-cross" *ngIf='cross'>
+
+  <div class="separate"></div>    
+
+  <div class="title">
+    <label>{{cross.title}}</label>
+    <label class="tip">查看更多></label>
+  </div>
+
+
+  <ion-slides class="item-slide-view" *ngIf='handledCrosses'>
+    <ion-slide *ngFor='let c of handledCrosses'>
+      <div *ngFor='let p of c' class="sub-slide-view" >
+        <img src="{{p.imgUrl}}">
+        <textarea rows=2 readonly='true'>{{p.title}}</textarea>
+        <p>{{p.price}}</p>
+      </div>  
+    </ion-slide>
+  </ion-slides>
+
+</div>
